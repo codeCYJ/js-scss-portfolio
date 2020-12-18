@@ -118,7 +118,7 @@
   height: 90px;
   font-size: 45px;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 100px;
   text-transform: uppercase;
 }
 
@@ -126,11 +126,11 @@
   height: 1px;
   width: 50px;
   background-color: #dfdfdf;
-  margin: 0 auto 4vh auto;
+  margin: 0 auto 5vh auto;
 }
 
 * body .main .content .about .about-info {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@
 
 * body .main .content .about .about-info .info-me #infospan2 {
   text-align: left;
-  margin-left: 100px;
+  margin-left: 140px;
 }
 
 * body .main .content .about .about-info .skills {
@@ -241,9 +241,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #dfdfdf;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px 30px 20px 110px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px 0 20px 140px;
   word-break: keep-all;
   font-size: 18px;
   line-height: 3vh;
@@ -260,18 +260,19 @@
 * body .main .content .project .project-top {
   width: 100%;
   height: 90px;
-  padding-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 * body .main .content .project .project-top .project-title {
   width: 100%;
-  font-size: 45px;
+  font-size: 50px;
   text-transform: uppercase;
 }
 
 * body .main .content .project .project-main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,7 +285,7 @@
 
 * body .main .content .project .project-main #main-pj {
   width: 100%;
-  height: 150px;
+  height: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,9 +294,8 @@
 }
 
 * body .main .content .project .project-main #main-pj #video {
-  width: 150px;
-  height: 150px;
-  background-size: cover;
+  width: 240px;
+  height: 100%;
 }
 
 * body .main .content .project .project-main #main-pj #video:hover {
@@ -315,21 +315,23 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
   margin-bottom: 10px;
+  font-size: 22px;
 }
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
   width: 100%;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +343,6 @@
 }
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-  font-size: 20px;
   margin: 0 5px;
   cursor: pointer;
   color: #48348a;
@@ -349,6 +350,10 @@
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a :visited {
   color: #48348a;
+}
+
+* body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
+  font-size: 26px;
 }
 
 * body .main .content .Testimonials {
@@ -377,6 +382,8 @@
 
 * body .main .content .Testimonials .Testimonials-top {
   margin-top: 100px;
+  width: 1000px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +394,7 @@
 
 * body .main .content .Testimonials .Testimonials-top .Testimonials-title {
   color: black;
+  max-width: 1000px;
   font-size: 4rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -394,7 +402,7 @@
   background-image: linear-gradient(to top, #283e51, #4b79a1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin: 0 450px 10px 100px;
+  margin: 0 0 20px 0;
 }
 
 * body .main .content .Testimonials .Testimonials-top .Testimonials-btn {
@@ -410,9 +418,9 @@
 * body .main .content .Testimonials .Testimonials-top .Testimonials-btn p,
 * body .main .content .Testimonials .Testimonials-top .Testimonials-btn i {
   color: black;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 1000;
-  height: 50px;
+  height: 80px;
   margin: 5px 5px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#283e51), to(#4b79a1));
   background-image: linear-gradient(to top, #283e51, #4b79a1);
@@ -431,13 +439,13 @@
 }
 
 * body .main .content .Testimonials .Testimonials-content {
-  width: 1000px;
+  max-width: 1200px;
   height: 500px;
   margin: 0 auto;
 }
 
-* body .main .content .Testimonials .Testimonials-content .content-1 {
-  position: absolute;
+* body .main .content .Testimonials .Testimonials-content .content-1,
+* body .main .content .Testimonials .Testimonials-content .content-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,55 +455,43 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 30px 50px;
+  padding: 25px 70px;
   border-radius: 10px;
-  height: 200px;
-  width: 1000px;
+  height: 300px;
+  max-width: 1200px;
   color: white;
   background: #4b79a1;
   background: -webkit-gradient(linear, left top, right top, from(#283e51), to(#4b79a1));
   background: linear-gradient(to right, #283e51, #4b79a1);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
-* body .main .content .Testimonials .Testimonials-content .content-1 .content-text {
-  margin-bottom: 10px;
+* body .main .content .Testimonials .Testimonials-content .content-1 .content-text,
+* body .main .content .Testimonials .Testimonials-content .content-2 .content-text {
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
-* body .main .content .Testimonials .Testimonials-content .content-1 p {
-  font-size: 20px;
+* body .main .content .Testimonials .Testimonials-content .content-1 p,
+* body .main .content .Testimonials .Testimonials-content .content-2 p {
+  font-size: 23px;
+}
+
+* body .main .content .Testimonials .Testimonials-content .content-2 {
+  display: none;
+}
+
+* body .main .content .Testimonials .Testimonials-content .content-2 p {
+  font-size: 21px;
+}
+
+* body .main .content .Testimonials .no2.Testimonials-content .content-1 {
+  display: none;
 }
 
 * body .main .content .Testimonials .no2.Testimonials-content .content-2 {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 30px 50px;
-  border-radius: 10px;
-  height: 200px;
-  width: 1000px;
-  color: white;
-  background: #4b79a1;
-  background: -webkit-gradient(linear, left top, right top, from(#283e51), to(#4b79a1));
-  background: linear-gradient(to right, #283e51, #4b79a1);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-* body .main .content .Testimonials .no2.Testimonials-content .content-2 .content-text {
-  margin-bottom: 10px;
-}
-
-* body .main .content .Testimonials .no2.Testimonials-content .content-2 p {
-  font-size: 18px;
 }
 
 * body .main .content .contact {
@@ -506,7 +502,7 @@
 * body .main .content .contact .contact-top {
   max-width: 1000px;
   height: 100px;
-  padding: 100px;
+  padding: 150px;
   margin: 0 auto;
 }
 
@@ -536,7 +532,7 @@
 }
 
 * body .main .content .contact .contact-main .main-right {
-  margin: 110px 0 50px 110px;
+  margin: 110px 0 50px 130px;
   font-weight: 700;
   line-height: 30px;
 }
@@ -547,7 +543,8 @@
 }
 
 * body .main .content .contact .contact-bottom {
-  width: 60%;
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,9 +553,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  padding-left: 1020px;
 }
 
 * body .main .content .contact .contact-bottom #contact-bottomitems {
@@ -588,27 +583,457 @@
   border: none;
 }
 
-@-webkit-keyframes cursor {
-  0% {
-    border-right: 2px solid #fff;
+@media screen and (max-width: 1920px) {
+  * body .main .content .about .about-title {
+    padding-top: 60px;
   }
-  50% {
-    border-right: 2px solid #333333;
+  * body .main .content .about .about-titlebottom {
+    margin: 0 auto 4vh auto;
   }
-  100% {
-    border-right: 2px solid #fff;
+  * body .main .content .about .about-info {
+    max-width: 1100px;
+  }
+  * body .main .content .about .about-info .info-me #infospan2 {
+    margin-left: 100px;
+  }
+  * body .main .content .about .info-motto {
+    max-width: 900px;
+    padding: 20px 30px 20px 110px;
+    margin: 0 auto;
+  }
+  * body .main .content .project .project-top {
+    height: 70px;
+    padding-top: 60px;
+  }
+  * body .main .content .project .project-top .project-title {
+    font-size: 45px;
+  }
+  * body .main .content .project .project-main {
+    max-width: 1200px;
+  }
+  * body .main .content .project .project-main #main-pj {
+    height: 130px;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  * body .main .content .project .project-main #main-pj #video {
+    width: 180px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content {
+    margin-left: 50px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
+    margin: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
+    font-size: 23px;
+  }
+  * body .main .content .Testimonials {
+    background-size: 19%;
+  }
+  * body .main .content .Testimonials .Testimonials-top {
+    margin-top: 100px;
+    max-width: 950px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn a,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn p,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn i {
+    font-size: 35px;
+    height: 65px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1,
+  * body .main .content .Testimonials .Testimonials-content .content-2 {
+    height: 270px;
+    max-width: 840px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1 p,
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 20px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 19px;
+  }
+  * body .main .content .contact .contact-top {
+    max-width: 840px;
+    padding: 80px;
+  }
+  * body .main .content .contact .contact-main {
+    max-width: 840px;
+    max-height: 500px;
+  }
+  * body .main .content .contact .contact-main .main-right {
+    margin: 100px 0 50px 76px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  * body .main .content .contact .contact-bottom {
+    width: 100%;
+    left: 540px;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
-@keyframes cursor {
-  0% {
-    border-right: 2px solid #fff;
+@media screen and (max-width: 1024px) {
+  * body .main .content .typingdiv p {
+    font-size: 4vw;
   }
-  50% {
-    border-right: 2px solid #333333;
+  * body .main .content .about .about-title {
+    padding-top: 60px;
   }
-  100% {
-    border-right: 2px solid #fff;
+  * body .main .content .about .about-titlebottom {
+    display: none;
+  }
+  * body .main .content .about .about-info {
+    max-width: 700px;
+  }
+  * body .main .content .about .about-info .info-me .infome-photo {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+  }
+  * body .main .content .about .about-info .info-me .infome-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  * body .main .content .about .about-info .info-me #infospan2 {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  * body .main .content .about .about-info .skills .center {
+    padding: 10px 20px;
+  }
+  * body .main .content .about .about-info .skills .center h1 {
+    font-size: 16px;
+    padding: 0;
+  }
+  * body .main .content .about .info-motto {
+    max-width: 700px;
+    padding: 10px;
+    margin: 0 auto;
+    line-height: 2.2vh;
+  }
+  * body .main .content .about .info-motto span {
+    font-size: 15px;
+  }
+  * body .main .content .project .project-top {
+    height: 50px;
+    padding: 60px 0 20px 0;
+  }
+  * body .main .content .project .project-top .project-title {
+    font-size: 40px;
+  }
+  * body .main .content .project .project-main {
+    max-width: 850px;
+  }
+  * body .main .content .project .project-main #main-pj {
+    height: 130px;
+    margin: 10px auto;
+  }
+  * body .main .content .project .project-main #main-pj #video {
+    width: 180px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content {
+    margin-left: 15px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
+    margin: 0 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
+    font-size: 20px;
+  }
+  * body .main .content .project .project-top {
+    height: 70px;
+    padding-top: 60px;
+  }
+  * body .main .content .project .project-top .project-title {
+    font-size: 45px;
+  }
+  * body .main .content .project .project-main {
+    max-width: 1200px;
+  }
+  * body .main .content .project .project-main #main-pj {
+    height: 130px;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  * body .main .content .project .project-main #main-pj #video {
+    width: 180px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content {
+    margin-left: 50px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
+    margin: 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
+    font-size: 23px;
+  }
+  * body .main .content .Testimonials {
+    background-size: 35%;
+  }
+  * body .main .content .Testimonials .Testimonials-top {
+    width: 580px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-title {
+    font-size: 40px;
+    height: 45px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn a,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn p,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn i {
+    font-size: 25px;
+    height: 45px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1,
+  * body .main .content .Testimonials .Testimonials-content .content-2 {
+    height: 270px;
+    width: 550px;
+    padding: 5px 20px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1 p,
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 20px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 16px;
+  }
+  * body .main .content .contact .contact-top {
+    max-width: 630px;
+    padding: 80px;
+  }
+  * body .main .content .contact .contact-main {
+    max-width: 600px;
+    max-height: 500px;
+  }
+  * body .main .content .contact .contact-main .main-left {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  * body .main .content .contact .contact-main .main-right {
+    margin: 200px 0 50px 5px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 13px;
+  }
+  * body .main .content .contact .contact-bottom {
+    width: 630px;
+    margin: 0 auto;
+    left: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 640px) {
+  * body .main .nav {
+    height: 50px;
+  }
+  * body .main .nav .nav-list button {
+    font-size: 14px;
+    margin: 7px;
+  }
+  * body .main .content .about .about-title {
+    padding-top: 50px;
+    height: 80px;
+  }
+  * body .main .content .about .about-info {
+    max-width: 520px;
+    height: 450px;
+  }
+  * body .main .content .about .about-info .info-me {
+    height: 400px;
+  }
+  * body .main .content .about .about-info .info-me .infome-photo {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+  }
+  * body .main .content .about .about-info .info-me #infospan2 {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  * body .main .content .about .about-info .skills .center {
+    padding: 5px 10px;
+  }
+  * body .main .content .about .about-info .skills .center h1 {
+    font-size: 16px;
+    padding: 0;
+  }
+  * body .main .content .about .about-info .skills .center .skillBox p {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  * body .main .content .about .info-motto {
+    max-width: 600px;
+  }
+  * body .main .content .about .info-motto span {
+    font-size: 13px;
+  }
+  * body .main .content .project .project-top {
+    height: 40px;
+    padding: 50px 0 20px 0;
+  }
+  * body .main .content .project .project-top .project-title {
+    font-size: 30px;
+  }
+  * body .main .content .project .project-main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  * body .main .content .project .project-main #main-pj {
+    height: 130px;
+  }
+  * body .main .content .project .project-main #main-pj #video {
+    width: 150px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content {
+    margin-left: 10px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
+    font-size: 19px;
+    margin: 4px 0;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
+    margin: 0 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
+    font-size: 20px;
+  }
+  * body .main .content .Testimonials {
+    background-size: 64%;
+  }
+  * body .main .content .Testimonials .Testimonials-top {
+    width: 430px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-title {
+    font-size: 30px;
+    height: 35px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn a,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn p,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn i {
+    font-size: 20px;
+    height: 40px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1,
+  * body .main .content .Testimonials .Testimonials-content .content-2 {
+    height: 270px;
+    width: 400px;
+    padding: 5px 20px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1 p,
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 18px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 14px;
+  }
+  * body .main .content .contact .contact-top {
+    max-width: 430px;
+    padding: 80px auto 20px auto;
+  }
+  * body .main .content .contact .contact-main {
+    max-width: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  * body .main .content .contact .contact-main .main-left {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  * body .main .content .contact .contact-main .main-right {
+    margin: 50px 0 50px 5px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  * body .main .content .contact .contact-bottom {
+    width: 430px;
+    margin: 50px auto 50px auto;
+    left: 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  @-webkit-keyframes cursor {
+    0% {
+      border-right: 2px solid #fff;
+    }
+    50% {
+      border-right: 2px solid #333333;
+    }
+    100% {
+      border-right: 2px solid #fff;
+    }
+  }
+  @keyframes cursor {
+    0% {
+      border-right: 2px solid #fff;
+    }
+    50% {
+      border-right: 2px solid #333333;
+    }
+    100% {
+      border-right: 2px solid #fff;
+    }
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,35 @@
 @charset "utf-8";
 
+$desktop-l-width: 1920px;
+$desktop-s-width: 1024px;
+$mob-l-width: 640px;
+$mob-s-width: 425px;
+
+// PC large
+@mixin pc-large {
+  @media screen and (max-width: #{$desktop-l-width}) {
+    @content;
+  }
+}
+// only PC
+@mixin pc {
+  @media screen and (max-width: #{$desktop-s-width}) {
+    @content;
+  }
+}
+// 모바일
+@mixin mob {
+  @media screen and (max-width: #{$mob-l-width}) {
+    @content;
+  }
+}
+// 모바일 mid
+@mixin mob-s {
+  @media screen and (max-width: #{$mob-s-width}) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,17 +113,17 @@
             height: 90px;
             font-size: 45px;
             text-align: center;
-            padding-top: 60px;
+            padding-top: 100px;
             text-transform: uppercase;
           }
           .about-titlebottom {
             height: 1px;
             width: 50px;
             background-color: rgb(223, 223, 223);
-            margin: 0 auto 4vh auto;
+            margin: 0 auto 5vh auto;
           }
           .about-info {
-            max-width: 1100px;
+            max-width: 1300px;
             margin: 0 auto;
             display: flex;
             .info-me {
@@ -123,7 +153,7 @@
               }
               #infospan2 {
                 text-align: left;
-                margin-left: 100px;
+                margin-left: 140px;
               }
             }
             .skills {
@@ -175,9 +205,9 @@
             display: flex;
             flex-direction: column;
             border: 1px solid rgb(223, 223, 223);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px 30px 20px 110px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px 0 20px 140px;
             word-break: keep-all;
             font-size: 18px;
             line-height: 3vh;
@@ -191,29 +221,29 @@
           .project-top {
             width: 100%;
             height: 90px;
-            padding-top: 60px;
+            padding-top: 100px;
+            padding-bottom: 30px;
             text-align: center;
             .project-title {
               width: 100%;
-              font-size: 45px;
+              font-size: 50px;
               text-transform: uppercase;
             }
           }
           .project-main {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             #main-pj {
               width: 100%;
-              height: 150px;
+              height: 190px;
               display: flex;
               border: 1px solid white;
               margin: 20px auto;
               #video {
-                width: 150px;
-                height: 150px;
-                background-size: cover;
+                width: 240px;
+                height: 100%;
               }
               #video:hover {
                 transform: scale(2.5);
@@ -223,28 +253,32 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                margin-left: 30px;
+                margin-left: 50px;
                 #pj-contentname p {
-                  font-size: 24px;
+                  font-size: 26px;
                   font-weight: 800;
-                  margin-top: 5px;
+                  margin-top: 10px;
                 }
                 #pj-contenttext {
                   margin-bottom: 10px;
+                  font-size: 22px;
                 }
                 #pj-contentlang {
                   width: 100%;
+                  font-size: 20px;
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 5px;
                   color: #888;
                   a {
-                    font-size: 20px;
                     margin: 0 5px;
                     cursor: pointer;
                     color: rgb(72, 52, 138);
                     :visited {
                       color: rgb(72, 52, 138);
+                    }
+                    i {
+                      font-size: 26px;
                     }
                   }
                 }
@@ -267,17 +301,20 @@
           margin: 0 auto;
           .Testimonials-top {
             margin-top: 100px;
+            width: 1000px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             .Testimonials-title {
               color: black;
+              max-width: 1000px;
               font-size: 4rem;
               font-weight: 900;
               text-transform: uppercase;
               background-image: linear-gradient(to top, #283e51, #4b79a1);
               -webkit-text-fill-color: transparent; //투명글씨체
               -webkit-background-clip: text;
-              margin: 0 450px 10px 100px;
+              margin: 0 0 20px 0;
             }
             .Testimonials-btn {
               display: flex;
@@ -286,9 +323,9 @@
               p,
               i {
                 color: black;
-                font-size: 30px;
+                font-size: 40px;
                 font-weight: 1000;
-                height: 50px;
+                height: 80px;
                 margin: 5px 5px;
                 background-image: linear-gradient(to top, #283e51, #4b79a1);
                 -webkit-text-fill-color: transparent; //투명글씨체
@@ -305,52 +342,43 @@
             }
           }
           .Testimonials-content {
-            width: 1000px;
+            max-width: 1200px;
             height: 500px;
             margin: 0 auto;
-            .content-1 {
-              position: absolute;
+            .content-1,
+            .content-2 {
               display: flex;
               flex-direction: column;
               justify-content: space-around;
-              padding: 30px 50px;
+              padding: 25px 70px;
               border-radius: 10px;
-              height: 200px;
-              width: 1000px;
+              height: 300px;
+              max-width: 1200px;
               color: white;
               background: #4b79a1;
               background: -webkit-linear-gradient(to right, #283e51, #4b79a1);
               background: linear-gradient(to right, #283e51, #4b79a1);
-              transform-style: preserve-3d;
               .content-text {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                line-height: 1.5;
               }
               p {
-                font-size: 20px;
+                font-size: 23px;
+              }
+            }
+            .content-2 {
+              display: none;
+              p {
+                font-size: 21px;
               }
             }
           }
           .no2.Testimonials-content {
+            .content-1 {
+              display: none;
+            }
             .content-2 {
-              position: absolute;
               display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              padding: 30px 50px;
-              border-radius: 10px;
-              height: 200px;
-              width: 1000px;
-              color: white;
-              background: #4b79a1;
-              background: -webkit-linear-gradient(to right, #283e51, #4b79a1);
-              background: linear-gradient(to right, #283e51, #4b79a1);
-              transform-style: preserve-3d;
-              .content-text {
-                margin-bottom: 10px;
-              }
-              p {
-                font-size: 18px;
-              }
             }
           }
         }
@@ -360,7 +388,7 @@
           .contact-top {
             max-width: 1000px;
             height: 100px;
-            padding: 100px;
+            padding: 150px;
             margin: 0 auto;
             .c-top-title {
               font-size: 30px;
@@ -382,7 +410,7 @@
               font-weight: 900;
             }
             .main-right {
-              margin: 110px 0 50px 110px;
+              margin: 110px 0 50px 130px;
               font-weight: 700;
               line-height: 30px;
               .right-name {
@@ -392,11 +420,12 @@
             }
           }
           .contact-bottom {
-            width: 60%;
+            max-width: 1000px;
+            margin: 0 auto;
             font-size: 25px;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            padding-left: 1020px;
             #contact-bottomitems {
               width: 200px;
               display: flex;
@@ -425,14 +454,504 @@
   }
 }
 
-@keyframes cursor {
-  0% {
-    border-right: 2px solid #fff;
+@include pc-large() {
+  * {
+    body {
+      .main {
+        .content {
+          .about {
+            .about-title {
+              padding-top: 60px;
+            }
+            .about-titlebottom {
+              margin: 0 auto 4vh auto;
+            }
+            .about-info {
+              max-width: 1100px;
+              .info-me {
+                #infospan2 {
+                  margin-left: 100px;
+                }
+              }
+            }
+            .info-motto {
+              max-width: 900px;
+              padding: 20px 30px 20px 110px;
+              margin: 0 auto;
+            }
+          }
+          .project {
+            .project-top {
+              height: 70px;
+              padding-top: 60px;
+              .project-title {
+                font-size: 45px;
+              }
+            }
+            .project-main {
+              max-width: 1200px;
+              #main-pj {
+                height: 130px;
+                margin: 20px auto;
+                max-width: 1000px;
+                #video {
+                  width: 180px;
+                }
+                #pj-content {
+                  margin-left: 50px;
+                  #pj-contentname p {
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                  }
+                  #pj-contenttext {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                  }
+                  #pj-contentlang {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    a {
+                      margin: 5px;
+                      i {
+                        font-size: 23px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .Testimonials {
+            background-size: 19%;
+            .Testimonials-top {
+              margin-top: 100px;
+              max-width: 950px;
+              .Testimonials-btn {
+                a,
+                p,
+                i {
+                  font-size: 35px;
+                  height: 65px;
+                }
+              }
+            }
+            .Testimonials-content {
+              .content-1,
+              .content-2 {
+                height: 270px;
+                max-width: 840px;
+                p {
+                  font-size: 20px;
+                }
+              }
+              .content-2 {
+                p {
+                  font-size: 19px;
+                }
+              }
+            }
+          }
+          .contact {
+            .contact-top {
+              max-width: 840px;
+              padding: 80px;
+            }
+            .contact-main {
+              max-width: 840px;
+              max-height: 500px;
+              .main-right {
+                margin: 100px 0 50px 76px;
+                font-weight: 700;
+                line-height: 30px;
+              }
+            }
+            .contact-bottom {
+              width: 100%;
+              left: 540px;
+              position: relative;
+              padding: 0;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
   }
-  50% {
-    border-right: 2px solid #333333;
+}
+
+@include pc() {
+  * {
+    body {
+      .main {
+        .content {
+          .typingdiv {
+            p {
+              font-size: 4vw;
+            }
+          }
+          .about {
+            .about-title {
+              padding-top: 60px;
+            }
+            .about-titlebottom {
+              display: none;
+            }
+            .about-info {
+              max-width: 700px;
+              .info-me {
+                .infome-photo {
+                  width: 200px;
+                  height: 200px;
+                  margin: 10px auto;
+                }
+                .infome-name {
+                  display: flex;
+                  flex-direction: column;
+                }
+                #infospan2 {
+                  margin-left: 15px;
+                  font-size: 14px;
+                }
+              }
+              .skills {
+                .center {
+                  padding: 10px 20px;
+                  h1 {
+                    font-size: 16px;
+                    padding: 0;
+                  }
+                }
+              }
+            }
+            .info-motto {
+              max-width: 700px;
+              padding: 10px;
+              margin: 0 auto;
+              line-height: 2.2vh;
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+          .project {
+            .project-top {
+              height: 50px;
+              padding: 60px 0 20px 0;
+              .project-title {
+                font-size: 40px;
+              }
+            }
+            .project-main {
+              max-width: 850px;
+              #main-pj {
+                height: 130px;
+                margin: 10px auto;
+                #video {
+                  width: 180px;
+                }
+                #pj-content {
+                  margin-left: 15px;
+                  #pj-contentname p {
+                    font-size: 20px;
+                    margin: 5px 0;
+                  }
+                  #pj-contenttext {
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                  }
+                  #pj-contentlang {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    a {
+                      margin: 0 5px;
+                      i {
+                        font-size: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .project {
+            .project-top {
+              height: 70px;
+              padding-top: 60px;
+              .project-title {
+                font-size: 45px;
+              }
+            }
+            .project-main {
+              max-width: 1200px;
+              #main-pj {
+                height: 130px;
+                margin: 20px auto;
+                max-width: 1000px;
+                #video {
+                  width: 180px;
+                }
+                #pj-content {
+                  margin-left: 50px;
+                  #pj-contentname p {
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                  }
+                  #pj-contenttext {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                  }
+                  #pj-contentlang {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    a {
+                      margin: 5px;
+                      i {
+                        font-size: 23px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .Testimonials {
+            background-size: 35%;
+            .Testimonials-top {
+              width: 580px;
+              .Testimonials-title {
+                font-size: 40px;
+                height: 45px;
+              }
+              .Testimonials-btn {
+                a,
+                p,
+                i {
+                  font-size: 25px;
+                  height: 45px;
+                }
+              }
+            }
+            .Testimonials-content {
+              .content-1,
+              .content-2 {
+                height: 270px;
+                width: 550px;
+                padding: 5px 20px;
+                p {
+                  font-size: 20px;
+                }
+              }
+              .content-2 {
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          .contact {
+            .contact-top {
+              max-width: 630px;
+              padding: 80px;
+            }
+            .contact-main {
+              max-width: 600px;
+              max-height: 500px;
+              .main-left {
+                font-size: 40px;
+                font-weight: 900;
+              }
+              .main-right {
+                margin: 200px 0 50px 5px;
+                font-weight: 700;
+                line-height: 30px;
+                font-size: 13px;
+              }
+            }
+            .contact-bottom {
+              width: 630px;
+              margin: 0 auto;
+              left: 280px;
+            }
+          }
+        }
+      }
+    }
   }
-  100% {
-    border-right: 2px solid #fff;
+  @include mob() {
+    * {
+      body {
+        .main {
+          .nav {
+            height: 50px;
+            .nav-list {
+              button {
+                font-size: 14px;
+                margin: 7px;
+              }
+            }
+          }
+          .content {
+            .about {
+              .about-title {
+                padding-top: 50px;
+                height: 80px;
+              }
+              .about-info {
+                max-width: 520px;
+                height: 450px;
+                .info-me {
+                  height: 400px;
+                  .infome-photo {
+                    width: 150px;
+                    height: 150px;
+                    margin: 5px auto;
+                  }
+                  #infospan2 {
+                    margin-left: 10px;
+                    font-size: 14px;
+                  }
+                }
+                .skills {
+                  .center {
+                    padding: 5px 10px;
+                    h1 {
+                      font-size: 16px;
+                      padding: 0;
+                    }
+                    .skillBox {
+                      p {
+                        font-size: 12px;
+                        font-weight: 700;
+                      }
+                    }
+                  }
+                }
+              }
+              .info-motto {
+                max-width: 600px;
+                span {
+                  font-size: 13px;
+                }
+              }
+            }
+            .project {
+              .project-top {
+                height: 40px;
+                padding: 50px 0 20px 0;
+                .project-title {
+                  font-size: 30px;
+                }
+              }
+              .project-main {
+                max-width: 600px;
+                margin: 0 auto;
+                #main-pj {
+                  height: 130px;
+                  #video {
+                    width: 150px;
+                  }
+                  #pj-content {
+                    margin-left: 10px;
+                    #pj-contentname p {
+                      font-size: 19px;
+                      margin: 4px 0;
+                    }
+                    #pj-contenttext {
+                      margin-bottom: 4px;
+                      font-size: 12px;
+                    }
+                    #pj-contentlang {
+                      font-size: 12px;
+                      margin-bottom: 4px;
+                      a {
+                        margin: 0 5px;
+                        i {
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .Testimonials {
+              background-size: 64%;
+              .Testimonials-top {
+                width: 430px;
+                .Testimonials-title {
+                  font-size: 30px;
+                  height: 35px;
+                }
+                .Testimonials-btn {
+                  a,
+                  p,
+                  i {
+                    font-size: 20px;
+                    height: 40px;
+                  }
+                }
+              }
+              .Testimonials-content {
+                .content-1,
+                .content-2 {
+                  height: 270px;
+                  width: 400px;
+                  padding: 5px 20px;
+                  p {
+                    font-size: 18px;
+                  }
+                }
+                .content-2 {
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+            .contact {
+              .contact-top {
+                max-width: 430px;
+                padding: 80px auto 20px auto;
+              }
+              .contact-main {
+                max-width: 430px;
+                display: flex;
+                flex-direction: column;
+                .main-left {
+                  font-size: 40px;
+                  font-weight: 900;
+                }
+                .main-right {
+                  margin: 50px 0 50px 5px;
+                  font-weight: 700;
+                  line-height: 30px;
+                  font-size: 14px;
+                }
+              }
+              .contact-bottom {
+                width: 430px;
+                margin: 50px auto 50px auto;
+                left: 140px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @keyframes cursor {
+    0% {
+      border-right: 2px solid #fff;
+    }
+    50% {
+      border-right: 2px solid #333333;
+    }
+    100% {
+      border-right: 2px solid #fff;
+    }
   }
 }
