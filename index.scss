@@ -121,10 +121,7 @@
                 color: #888;
                 margin-bottom: 30px;
               }
-              .infome-birth,
-              .infome-tel,
-              .infome-git,
-              .infome-email {
+              #infospan2 {
                 text-align: left;
                 margin-left: 100px;
               }
@@ -207,63 +204,42 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            .project1,
-            .project2,
-            .project3,
-            .project4 {
+            #main-pj {
               width: 100%;
               height: 150px;
               display: flex;
               border: 1px solid white;
               margin: 20px auto;
-              .project1-photo,
-              .project2-photo,
-              .project3-photo,
-              .project4-photo {
+              #video {
                 width: 150px;
                 height: 150px;
                 background-size: cover;
               }
-              .project1-photo:hover,
-              .project2-photo:hover,
-              .project3-photo:hover,
-              .project4-photo:hover {
+              #video:hover {
                 transform: scale(2.5);
               }
-              .project1-content,
-              .project2-content,
-              .project3-content,
-              .project4-content {
+              #pj-content {
                 width: 83%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 margin-left: 30px;
-                .content1-name p,
-                .content2-name p,
-                .content3-name p,
-                .content4-name p {
+                #pj-contentname p {
                   font-size: 24px;
                   font-weight: 800;
                   margin-top: 5px;
                 }
-                .content1-text,
-                .content2-text,
-                .content3-text,
-                .content4-text {
+                #pj-contenttext {
                   margin-bottom: 10px;
                 }
-                .content1-lang,
-                .content2-lang,
-                .content3-lang,
-                .content4-lang {
+                #pj-contentlang {
                   width: 100%;
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 5px;
                   color: #888;
                   a {
-                    font-size: 22px;
+                    font-size: 20px;
                     margin: 0 5px;
                     cursor: pointer;
                     color: rgb(72, 52, 138);
@@ -421,10 +397,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            .bottom-mail,
-            .bottom-phone,
-            .bottom-talk,
-            .bottom-git {
+            #contact-bottomitems {
               width: 200px;
               display: flex;
               .kakao-talk {
