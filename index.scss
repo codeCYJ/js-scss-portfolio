@@ -234,6 +234,7 @@
               .project2-content,
               .project3-content,
               .project4-content {
+                width: 83%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -256,8 +257,20 @@
                 .content2-lang,
                 .content3-lang,
                 .content4-lang {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
                   margin-bottom: 5px;
                   color: #888;
+                  a {
+                    font-size: 22px;
+                    margin: 0 5px;
+                    cursor: pointer;
+                    color: rgb(72, 52, 138);
+                    :visited {
+                      color: rgb(72, 52, 138);
+                    }
+                  }
                 }
               }
             }
