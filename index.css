@@ -54,6 +54,7 @@
 
 * body .main #section {
   position: relative;
+  overflow-x: hidden;
 }
 
 * body .main .content {
@@ -65,7 +66,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  background-image: url(/image/1.jpg);
+  background-image: url(image/1.jpg);
   background-size: cover;
 }
 
@@ -150,7 +151,7 @@
 }
 
 * body .main .content .about .about-info .info-me .infome-photo {
-  background-image: url(/image/2.jpg);
+  background-image: url(image/2.jpg);
   background-size: 100%;
   width: 250px;
   height: 250px;
@@ -284,8 +285,8 @@
 }
 
 * body .main .content .project .project-main #main-pj {
-  width: 100%;
-  height: 190px;
+  width: 98%;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,7 +331,7 @@
 }
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
-  width: 100%;
+  width: 98%;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,7 +358,7 @@
 }
 
 * body .main .content .Testimonials {
-  background-image: url(/image/5.png);
+  background-image: url(image/5.png);
   background-size: 23%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -557,7 +558,6 @@
 }
 
 * body .main .content .contact .contact-bottom #contact-bottomitems {
-  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,7 +566,7 @@
 * body .main .content .contact .contact-bottom #contact-bottomitems .kakao-talk {
   width: 25px;
   height: 25px;
-  background-image: url(/image/kakao-talk.png);
+  background-image: url(image/kakao-talk.png);
   background-size: cover;
   margin: 0 20px 10px 0;
 }
@@ -612,7 +612,7 @@
     max-width: 1200px;
   }
   * body .main .content .project .project-main #main-pj {
-    height: 130px;
+    height: 140px;
     margin: 20px auto;
     max-width: 1000px;
   }
@@ -633,7 +633,7 @@
     font-size: 16px;
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 5px;
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
@@ -641,6 +641,10 @@
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
     font-size: 23px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang .pj-contentlang-i {
+    width: 90px;
+    text-align: right;
   }
   * body .main .content .Testimonials {
     background-size: 19%;
@@ -747,7 +751,7 @@
     max-width: 850px;
   }
   * body .main .content .project .project-main #main-pj {
-    height: 130px;
+    height: 140px;
     margin: 10px auto;
   }
   * body .main .content .project .project-main #main-pj #video {
@@ -785,7 +789,7 @@
     max-width: 1200px;
   }
   * body .main .content .project .project-main #main-pj {
-    height: 130px;
+    height: 140px;
     margin: 20px auto;
     max-width: 1000px;
   }
@@ -803,10 +807,10 @@
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 5px;
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
@@ -926,7 +930,7 @@
     margin: 0 auto;
   }
   * body .main .content .project .project-main #main-pj {
-    height: 130px;
+    height: 140px;
   }
   * body .main .content .project .project-main #main-pj #video {
     width: 150px;
@@ -943,7 +947,7 @@
     font-size: 12px;
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 4px;
   }
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
@@ -1009,6 +1013,139 @@
     width: 430px;
     margin: 50px auto 50px auto;
     left: 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 425px) {
+  * body .main .nav .nav-list {
+    max-width: 425px;
+  }
+  * body .main .nav .nav-list button {
+    font-size: 8px;
+  }
+  * body .main .content .about .about-title {
+    padding-top: 50px;
+    height: 80px;
+  }
+  * body .main .content .about .about-info {
+    max-width: 520px;
+    max-height: 400px;
+  }
+  * body .main .content .about .about-info .info-me .infome-photo {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+  }
+  * body .main .content .about .about-info .info-me .infome-name span:first-child {
+    font-size: 18px;
+  }
+  * body .main .content .about .about-info .info-me .infome-name span:last-child {
+    font-size: 14px;
+  }
+  * body .main .content .about .about-info .info-me .infome-job {
+    font-size: 14px;
+  }
+  * body .main .content .about .about-info .info-me #infospan2 {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  * body .main .content .about .about-info .skills {
+    max-height: 370px;
+    margin: 0 auto 2vh auto;
+  }
+  * body .main .content .about .about-info .skills .center .skillBox {
+    margin: 10px auto;
+  }
+  * body .main .content .project .project-top {
+    height: 40px;
+    padding: 50px 0 10px 0;
+  }
+  * body .main .content .project .project-top .project-title {
+    font-size: 25px;
+  }
+  * body .main .content .project .project-main {
+    max-width: 600px;
+  }
+  * body .main .content .project .project-main #main-pj {
+    margin: 10px auto;
+  }
+  * body .main .content .project .project-main #main-pj #video {
+    width: 150px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content {
+    margin-left: 10px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
+    margin: 0 5px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
+    font-size: 18px;
+  }
+  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang .pj-contentlang-i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 1px;
+  }
+  * body .main .content .Testimonials {
+    background-size: 84%;
+  }
+  * body .main .content .Testimonials .Testimonials-top {
+    max-width: 380px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-title {
+    font-size: 25px;
+    height: 30px;
+  }
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn a,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn p,
+  * body .main .content .Testimonials .Testimonials-top .Testimonials-btn i {
+    font-size: 15px;
+    height: 35px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1,
+  * body .main .content .Testimonials .Testimonials-content .content-2 {
+    height: 270px;
+    max-width: 360px;
+    padding: 5px 10px;
+    overflow: hidden;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-1 p,
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 18px;
+  }
+  * body .main .content .Testimonials .Testimonials-content .content-2 p {
+    font-size: 14px;
+  }
+  * body .main .content .contact .contact-main {
+    max-width: 420px;
+  }
+  * body .main .content .contact .contact-main .main-left {
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 20px;
+  }
+  * body .main .content .contact .contact-main .main-right {
+    margin: 50px 0 50px 25px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  * body .main .content .contact .contact-bottom {
+    width: 400px;
+    margin: 50px auto 50px auto;
+    left: 50px;
   }
 }
 

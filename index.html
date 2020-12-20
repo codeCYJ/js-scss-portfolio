@@ -137,7 +137,7 @@
               <div class="playvideo">
                 <video class="project1-photo" id="video" controls muted>
                   <source
-                    src="/video/mypalett.mp4"
+                    src="video/mypalett.mp4"
                     type="video/mp4"
                     muted="muted"
                   />
@@ -146,23 +146,23 @@
               </div>
               <div class="project1-content" id="pj-content">
                 <span class="content1-name" id="pj-contentname"
-                  ><p>My Palett</p></span
+                  ><p>My Palette</p></span
                 >
                 <span class="content1-text" id="pj-contenttext"
                   >개발기간 : 2020.11.19 ~ 2020.12.17 <br />과일과 야채를
                   색깔별로 효능을 나누어 판매하는 반응형 웹사이트</span
                 >
                 <span class="content1-lang" id="pj-contentlang">
-                  #JAVA #jQuery #JavaScript #HTML5 #CSS3 #Spring #Eclipse
-                  #VsCode
-                  <span>
-                    <a
-                      class="git-a"
-                      href="https://github.com/codeCYJ/project_MyPalette"
-                      target="_blank"
+                  #JAVA #jQuery #JavaScript #HTML5 #CSS3 #Spring
+                  <span class="pj-contentlang-i">
+                    <a class="git-a" href="https://github.com/codeCYJ/project_MyPalette" target="_blank"><i class="fab fa-github"></i></a
                     >
-                      <i class="fab fa-github"></i>
-                    </a>
+                    <a
+                      class="home-a"
+                      href="http://project-mypalette.codecyj.xyz/"
+                      target="_blank"
+                      ><i class="far fa-file-powerpoint"></i></a></span
+                >
                   </span>
                 </span>
               </div>
@@ -171,7 +171,7 @@
               <div class="playvideo">
                 <video class="project2-photo" id="video" controls muted>
                   <source
-                    src="/video/portfolio.mp4"
+                    src="video/portfolio.mp4"
                     type="video/mp4"
                     muted="muted"
                   />
@@ -187,7 +187,7 @@
                   연습용 포트폴리오 - 정적 반응형 웹사이트</span
                 >
                 <span class="content2-lang" id="pj-contentlang">
-                  #HTML5 #SCSS #VsCode<span
+                  #HTML5 #SCSS #VsCode<span class="pj-contentlang-i"
                     ><a
                       class="git-a"
                       href="https://github.com/codeCYJ/project-portfolio"
@@ -205,7 +205,7 @@
               <div class="playvideo">
                 <video class="project3-photo" id="video" controls muted>
                   <source
-                    src="/video/youtube.mp4"
+                    src="video/youtube.mp4"
                     type="video/mp4"
                     muted="muted"
                   />
@@ -221,7 +221,7 @@
                   재생페이지</span
                 >
                 <span class="content3-lang" id="pj-contentlang">
-                  #jQuery #JavaScript #HTML5 #CSS3 #VsCode<span
+                  #jQuery #JavaScript #HTML5 #CSS3<span class="pj-contentlang-i"
                     ><a
                       class="git-a"
                       href="https://github.com/codeCYJ/project_youtube"
@@ -239,7 +239,7 @@
               <div class="playvideo">
                 <video class="project4-photo" id="video" controls muted>
                   <source
-                    src="/video/memorize.mp4"
+                    src="video/memorize.mp4"
                     type="video/mp4"
                     muted="muted"
                   />
@@ -255,8 +255,7 @@
                   반복하여 외울 수 있게 하는 웹사이트</span
                 >
                 <span class="content4-lang" id="pj-contentlang"
-                  >#JAVA #jQuery #JavaScript #HTML5 #CSS3 #Spring #Eclipse
-                  #VsCode<span
+                  >#JAVA #jQuery #JavaScript #HTML5 #CSS3 #Spring<span class="pj-contentlang-i"
                     ><a
                       class="git-a"
                       href="https://github.com/codeCYJ/project_memorize"
@@ -365,7 +364,7 @@
         "최용준의 포트폴리오입니다.",
         "저의 포트폴리오를 봐주셔서 감사합니다.",
       ],
-      typeSpeed: 100,
+      typeSpeed: 80,
       backSpeed: 70,
       loop: true,
     });
@@ -387,10 +386,7 @@
     });
   </script>
 
-  <script
-    type="text/javascript"
-    src="http://code.jquery.com/jquery-1.12.4.min.js"
-  ></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <script type="text/javascript">
     jQuery(document).on("ready", function () {
@@ -458,7 +454,7 @@
                 scrollTop: moveTop + "px",
               },
               {
-                duration: 800,
+                duration: 500,
                 complete: function () {},
               }
             );

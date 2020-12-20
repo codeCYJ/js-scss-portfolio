@@ -70,6 +70,7 @@ $mob-s-width: 425px;
       }
       #section {
         position: relative;
+        overflow-x: hidden;
       }
       .content {
         width: 100%;
@@ -78,7 +79,7 @@ $mob-s-width: 425px;
           width: 100%;
           height: 100%;
           text-align: center;
-          background-image: url(/image/1.jpg);
+          background-image: url(image/1.jpg);
           background-size: cover;
         }
         .typingdiv {
@@ -132,7 +133,7 @@ $mob-s-width: 425px;
               flex-direction: column;
               margin: 0 auto;
               .infome-photo {
-                background-image: url(/image/2.jpg);
+                background-image: url(image/2.jpg);
                 background-size: 100%;
                 width: 250px;
                 height: 250px;
@@ -236,8 +237,8 @@ $mob-s-width: 425px;
             display: flex;
             flex-direction: column;
             #main-pj {
-              width: 100%;
-              height: 190px;
+              width: 98%;
+              height: 200px;
               display: flex;
               border: 1px solid white;
               margin: 20px auto;
@@ -264,7 +265,7 @@ $mob-s-width: 425px;
                   font-size: 22px;
                 }
                 #pj-contentlang {
-                  width: 100%;
+                  width: 98%;
                   font-size: 20px;
                   display: flex;
                   justify-content: space-between;
@@ -287,7 +288,7 @@ $mob-s-width: 425px;
           }
         }
         .Testimonials {
-          background-image: url(/image/5.png);
+          background-image: url(image/5.png);
           background-size: 23%;
           background-position: bottom;
           background-repeat: no-repeat;
@@ -427,12 +428,11 @@ $mob-s-width: 425px;
             flex-direction: column;
             padding-left: 1020px;
             #contact-bottomitems {
-              width: 200px;
               display: flex;
               .kakao-talk {
                 width: 25px;
                 height: 25px;
-                background-image: url(/image/kakao-talk.png);
+                background-image: url(image/kakao-talk.png);
                 background-size: cover;
                 margin: 0 20px 10px 0;
               }
@@ -491,7 +491,7 @@ $mob-s-width: 425px;
             .project-main {
               max-width: 1200px;
               #main-pj {
-                height: 130px;
+                height: 140px;
                 margin: 20px auto;
                 max-width: 1000px;
                 #video {
@@ -510,13 +510,17 @@ $mob-s-width: 425px;
                     font-size: 16px;
                   }
                   #pj-contentlang {
-                    font-size: 16px;
+                    font-size: 15px;
                     margin-bottom: 5px;
                     a {
                       margin: 5px;
                       i {
                         font-size: 23px;
                       }
+                    }
+                    .pj-contentlang-i {
+                      width: 90px;
+                      text-align: right;
                     }
                   }
                 }
@@ -646,7 +650,7 @@ $mob-s-width: 425px;
             .project-main {
               max-width: 850px;
               #main-pj {
-                height: 130px;
+                height: 140px;
                 margin: 10px auto;
                 #video {
                   width: 180px;
@@ -686,7 +690,7 @@ $mob-s-width: 425px;
             .project-main {
               max-width: 1200px;
               #main-pj {
-                height: 130px;
+                height: 140px;
                 margin: 20px auto;
                 max-width: 1000px;
                 #video {
@@ -702,10 +706,10 @@ $mob-s-width: 425px;
                   }
                   #pj-contenttext {
                     margin-bottom: 10px;
-                    font-size: 16px;
+                    font-size: 14px;
                   }
                   #pj-contentlang {
-                    font-size: 16px;
+                    font-size: 13px;
                     margin-bottom: 5px;
                     a {
                       margin: 5px;
@@ -850,7 +854,7 @@ $mob-s-width: 425px;
                 max-width: 600px;
                 margin: 0 auto;
                 #main-pj {
-                  height: 130px;
+                  height: 140px;
                   #video {
                     width: 150px;
                   }
@@ -865,7 +869,7 @@ $mob-s-width: 425px;
                       font-size: 12px;
                     }
                     #pj-contentlang {
-                      font-size: 12px;
+                      font-size: 11px;
                       margin-bottom: 4px;
                       a {
                         margin: 0 5px;
@@ -936,6 +940,161 @@ $mob-s-width: 425px;
                 width: 430px;
                 margin: 50px auto 50px auto;
                 left: 140px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mob-s() {
+    * {
+      body {
+        .main {
+          .nav {
+            .nav-list {
+              max-width: 425px;
+              button {
+                font-size: 8px;
+              }
+            }
+          }
+          .content {
+            .about {
+              .about-title {
+                padding-top: 50px;
+                height: 80px;
+              }
+              .about-info {
+                max-width: 520px;
+                max-height: 400px;
+                .info-me {
+                  .infome-photo {
+                    width: 100px;
+                    height: 100px;
+                    margin: 15px auto;
+                  }
+                  .infome-name {
+                    span:first-child {
+                      font-size: 18px;
+                    }
+                    span:last-child {
+                      font-size: 14px;
+                    }
+                  }
+                  .infome-job {
+                    font-size: 14px;
+                  }
+                  #infospan2 {
+                    margin-left: 10px;
+                    font-size: 12px;
+                  }
+                }
+                .skills {
+                  max-height: 370px;
+                  margin: 0 auto 2vh auto;
+                  .center {
+                    .skillBox {
+                      margin: 10px auto;
+                    }
+                  }
+                }
+              }
+            }
+            .project {
+              .project-top {
+                height: 40px;
+                padding: 50px 0 10px 0;
+                .project-title {
+                  font-size: 25px;
+                }
+              }
+              .project-main {
+                max-width: 600px;
+                #main-pj {
+                  margin: 10px auto;
+                  #video {
+                    width: 150px;
+                  }
+                  #pj-content {
+                    margin-left: 10px;
+                    #pj-contentname p {
+                      font-size: 16px;
+                      margin: 4px 0;
+                    }
+                    #pj-contentlang {
+                      font-size: 11px;
+                      margin-bottom: 4px;
+                      a {
+                        margin: 0 5px;
+                        i {
+                          font-size: 18px;
+                        }
+                      }
+                      .pj-contentlang-i {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-left: 1px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .Testimonials {
+              background-size: 84%;
+              .Testimonials-top {
+                max-width: 380px;
+                .Testimonials-title {
+                  font-size: 25px;
+                  height: 30px;
+                }
+                .Testimonials-btn {
+                  a,
+                  p,
+                  i {
+                    font-size: 15px;
+                    height: 35px;
+                  }
+                }
+              }
+              .Testimonials-content {
+                .content-1,
+                .content-2 {
+                  height: 270px;
+                  max-width: 360px;
+                  padding: 5px 10px;
+                  overflow: hidden;
+                  p {
+                    font-size: 18px;
+                  }
+                }
+                .content-2 {
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+            .contact {
+              .contact-main {
+                max-width: 420px;
+                .main-left {
+                  font-size: 40px;
+                  font-weight: 900;
+                  margin-left: 20px;
+                }
+                .main-right {
+                  margin: 50px 0 50px 25px;
+                  font-weight: 700;
+                  line-height: 30px;
+                  font-size: 14px;
+                }
+              }
+              .contact-bottom {
+                width: 400px;
+                margin: 50px auto 50px auto;
+                left: 50px;
               }
             }
           }
