@@ -255,10 +255,24 @@ $mob-s-width: 425px;
                 flex-direction: column;
                 justify-content: space-between;
                 margin-left: 50px;
-                #pj-contentname p {
-                  font-size: 26px;
-                  font-weight: 800;
-                  margin-top: 10px;
+                #pj-contentname {
+                  display: flex;
+                  justify-content: space-between;
+                  p {
+                    font-size: 26px;
+                    font-weight: 800;
+                    margin-top: 10px;
+                  }
+                  a {
+                    margin: 0 5px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    letter-spacing: 0;
+                    color: rgb(72, 52, 138);
+                    :visited {
+                      color: rgb(72, 52, 138);
+                    }
+                  }
                 }
                 #pj-contenttext {
                   margin-bottom: 10px;
@@ -271,17 +285,6 @@ $mob-s-width: 425px;
                   justify-content: space-between;
                   margin-bottom: 5px;
                   color: #888;
-                  a {
-                    margin: 0 5px;
-                    cursor: pointer;
-                    color: rgb(72, 52, 138);
-                    :visited {
-                      color: rgb(72, 52, 138);
-                    }
-                    i {
-                      font-size: 26px;
-                    }
-                  }
                 }
               }
             }
@@ -512,16 +515,6 @@ $mob-s-width: 425px;
                   #pj-contentlang {
                     font-size: 15px;
                     margin-bottom: 5px;
-                    a {
-                      margin: 5px;
-                      i {
-                        font-size: 23px;
-                      }
-                    }
-                    .pj-contentlang-i {
-                      width: 90px;
-                      text-align: right;
-                    }
                   }
                 }
               }
@@ -668,12 +661,6 @@ $mob-s-width: 425px;
                   #pj-contentlang {
                     font-size: 14px;
                     margin-bottom: 5px;
-                    a {
-                      margin: 0 5px;
-                      i {
-                        font-size: 20px;
-                      }
-                    }
                   }
                 }
               }
@@ -711,12 +698,6 @@ $mob-s-width: 425px;
                   #pj-contentlang {
                     font-size: 13px;
                     margin-bottom: 5px;
-                    a {
-                      margin: 5px;
-                      i {
-                        font-size: 23px;
-                      }
-                    }
                   }
                 }
               }
@@ -871,12 +852,6 @@ $mob-s-width: 425px;
                     #pj-contentlang {
                       font-size: 11px;
                       margin-bottom: 4px;
-                      a {
-                        margin: 0 5px;
-                        i {
-                          font-size: 20px;
-                        }
-                      }
                     }
                   }
                 }
@@ -1025,17 +1000,6 @@ $mob-s-width: 425px;
                     #pj-contentlang {
                       font-size: 11px;
                       margin-bottom: 4px;
-                      a {
-                        margin: 0 5px;
-                        i {
-                          font-size: 18px;
-                        }
-                      }
-                      .pj-contentlang-i {
-                        display: flex;
-                        justify-content: flex-end;
-                        margin-left: 1px;
-                      }
                     }
                   }
                 }

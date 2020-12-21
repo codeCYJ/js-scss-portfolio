@@ -319,10 +319,31 @@
   margin-left: 50px;
 }
 
+* body .main .content .project .project-main #main-pj #pj-content #pj-contentname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 * body .main .content .project .project-main #main-pj #pj-content #pj-contentname p {
   font-size: 26px;
   font-weight: 800;
   margin-top: 10px;
+}
+
+* body .main .content .project .project-main #main-pj #pj-content #pj-contentname a {
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #48348a;
+}
+
+* body .main .content .project .project-main #main-pj #pj-content #pj-contentname a :visited {
+  color: #48348a;
 }
 
 * body .main .content .project .project-main #main-pj #pj-content #pj-contenttext {
@@ -341,20 +362,6 @@
           justify-content: space-between;
   margin-bottom: 5px;
   color: #888;
-}
-
-* body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-  margin: 0 5px;
-  cursor: pointer;
-  color: #48348a;
-}
-
-* body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a :visited {
-  color: #48348a;
-}
-
-* body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
-  font-size: 26px;
 }
 
 * body .main .content .Testimonials {
@@ -636,16 +643,6 @@
     font-size: 15px;
     margin-bottom: 5px;
   }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-    margin: 5px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
-    font-size: 23px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang .pj-contentlang-i {
-    width: 90px;
-    text-align: right;
-  }
   * body .main .content .Testimonials {
     background-size: 19%;
   }
@@ -772,12 +769,6 @@
     font-size: 14px;
     margin-bottom: 5px;
   }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-    margin: 0 5px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
-    font-size: 20px;
-  }
   * body .main .content .project .project-top {
     height: 70px;
     padding-top: 60px;
@@ -812,12 +803,6 @@
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
     font-size: 13px;
     margin-bottom: 5px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-    margin: 5px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
-    font-size: 23px;
   }
   * body .main .content .Testimonials {
     background-size: 35%;
@@ -950,12 +935,6 @@
     font-size: 11px;
     margin-bottom: 4px;
   }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-    margin: 0 5px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
-    font-size: 20px;
-  }
   * body .main .content .Testimonials {
     background-size: 64%;
   }
@@ -1082,21 +1061,6 @@
   * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang {
     font-size: 11px;
     margin-bottom: 4px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a {
-    margin: 0 5px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang a i {
-    font-size: 18px;
-  }
-  * body .main .content .project .project-main #main-pj #pj-content #pj-contentlang .pj-contentlang-i {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-left: 1px;
   }
   * body .main .content .Testimonials {
     background-size: 84%;
